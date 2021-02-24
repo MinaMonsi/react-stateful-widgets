@@ -53,13 +53,13 @@ export default function Counter() {
   const [count, setCount] = useState(0);
 
   const increment = () => {
-    /* STEP 4 */
+    /* STEP 4- Incremented count */ setCount(count + 1)
   };
   const decrement = () => {
-    /* STEP 5 */
+    /* STEP 5 - Decremented count */ setCount(count - 1)
   };
   const reset = () => {
-    /* STEP 6 */
+    /* STEP 6 - Reset code */ setCount(0)
   };
 
   const style = {
@@ -72,7 +72,7 @@ export default function Counter() {
     <div className='widget-counter container'>
       <h2>Counter</h2>
       <div id='count' style={style}>
-        Number {count} is {count % 2===0 ? `even` : `odd`/* STEP 3-Changed 0 to count & added ternary expression*/}
+        Number {count} is {count % 2 ? 'even' : 'odd'/* STEP 3-Changed 0 to count & added ternary expression*/}
       </div>
       <div>
         <button id='increment' onClick={increment}>Increment</button>
