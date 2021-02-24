@@ -72,7 +72,7 @@ export default function Counter() {
     <div className='widget-counter container'>
       <h2>Counter</h2>
       <div id='count' style={style}>
-        Number {count} is {count % 2 ? 'even' : 'odd'/* STEP 3-Changed 0 to count & added ternary expression*/}
+        Number {count} is {count % 2 ? 'odd' : 'even'/* STEP 3-Changed 0 to count & added ternary expression*/}
       </div>
       <div>
         <button id='increment' onClick={increment}>Increment</button>
